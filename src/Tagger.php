@@ -136,7 +136,7 @@ class Tagger implements TaggerInterface
             return false;
         }
 
-        $this->driver->persist($tag);
+        $this->driver->persistTag($tag);
         $this->driver->flush();
 
         return true;
